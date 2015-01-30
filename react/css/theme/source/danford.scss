@@ -1,0 +1,143 @@
+/**
+ * A simple theme for reveal.js presentations, similar
+ * to the default theme. The accent color is darkblue.
+ *
+ * This theme is Copyright (C) 2012 Owen Versteeg, https://github.com/StereotypicalApps. It is MIT licensed.
+ * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+// Include theme-specific fonts
+@import url('https://fonts.googleapis.com/css?family=News+Cycle:400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic');
+
+
+// Override theme settings (see ../template/settings.scss)
+$mainFont: "Lato", sans-serif;
+$mainColor: #ddd;
+
+$headingFont: "News Cycle", Impact, sans-serif;
+$headingColor: #fff;
+$headingTextShadow: none;
+$headingTextTransform: none;
+$headingMargin: 10px 0;
+$headingLineHeight: 1em;
+
+$codeFont: "Menlo", monaco, monospace;
+
+$backgroundColor: #111;
+$linkColor: #ffecc4;
+$linkColorHover: lighten($linkColor, 10%);
+$selectionBackgroundColor: rgba(0, 0, 0, 0.99);
+
+$imgBorder: 1px;
+$imgColor: darken($mainColor, 20%);
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.reveal {
+    .slides {
+        text-align: left;
+    }
+
+    h2 {
+        margin-bottom: 15px;
+    }
+
+    .title-slide {
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    hr {
+        width: 100%;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.5);
+        border: none;
+    }
+
+    .good {
+        color: #0d0;
+    }
+
+    .bad {
+        color: #d00;
+    }
+
+    .neutral {
+        color: #aaa;
+    }
+
+    .parent {
+        color: #ffe3c8;
+    }
+
+    .child {
+        color: #c8e3ff;
+    }
+
+    pre {
+        line-height: 1.1em;
+
+        code {
+            font-family: $codeFont;
+        }
+
+        &.inline {
+            width: auto;
+            display: inline-block;
+            position: relative;
+            top: 6px;
+            margin: 0;
+            padding: 2px 0;
+            line-height: 0.8em;
+
+            code {
+                display: inline-block;
+                font-size: 1.1em;
+            }
+        }
+    }
+
+    .split {
+        clear: both;
+        margin: 0 0 0 -2px;
+
+        .split-part {
+            float: left;
+            width: 48%;
+            margin: 0 0 0 2px;
+        }
+
+        &.split-3 {
+            .split-part {
+                width: 31%;
+            }
+
+            pre {
+                width: 100%;
+                line-height: 1em;
+
+                code {
+                    font-size: 0.9em;
+                }
+            }
+        }
+
+        pre {
+            width: 100%;
+            line-height: 1em;
+
+            code {
+                font-size: 0.78em;
+            }
+        }
+    }
+}

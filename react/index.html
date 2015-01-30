@@ -13,20 +13,6 @@
     <link rel="stylesheet" href="css/reveal.min.css">
     <link rel="stylesheet" href="css/theme/default.css" id="theme">
     <link rel="stylesheet" href="lib/css/hybrid.css">
-
-    <script>
-      if( window.location.search.match( /print-pdf/gi ) ) {
-        var link = document.createElement( 'link' );
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = 'css/print/pdf.css';
-        document.getElementsByTagName( 'head' )[0].appendChild( link );
-      }
-    </script>
-
-    <!--[if lt IE 9]>
-    <script src="lib/js/html5shiv.js"></script>
-    <![endif]-->
   </head>
   <body>
     <div class="reveal">
@@ -338,7 +324,7 @@ render: function () {
       <ul>
         <li>Arrow functions: <script class="javascript inline" type="text/code">items.map(item => item.id)</script></li>
         <li>Destructuring assignment: <script class="javascript inline" type="text/code">var [a, b, ...rest] = [1, 2, 3, 4]</script></li>
-        <li>Class syntax: <script class="javascript inline" type="text/code">class ItemStore extends EventEmitter { ...</script></li>
+        <li>Class syntax: <script class="javascript inline" type="text/code">class ItemStore extends EventEmitter { //...</script></li>
       </ul>
     </li>
     <li><code class="bad">✗</code> Yet another compile-to-JS language</li>
@@ -387,6 +373,7 @@ render: function () {
     <li>Available for personal help or consulting</li>
     <li>Email: <a href="mailto:jordandanford@gmail.com">jordandanford@gmail.com</a></li>
     <li>GitHub: <a href="https://github.com/jdanford">github.com/jdanford</a></li>
+    <li>Slides: <a href="http://jdanford.github.io/react/">jdanford.github.io/react</a></li>
   </ul>
 </section>
 <!-- END SLIDES -->

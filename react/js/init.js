@@ -30,17 +30,14 @@ Reveal.initialize({
   progress: true,
   history: true,
   center: false,
+  slideNumber: true,
+  overview: false,
 
   theme: Reveal.getQueryHash().theme || 'danford', // available themes are in /css/theme
   transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
 
   dependencies: [
     { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-    // { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-    // { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-    //{ src: 'plugin/highlight/highlight.js', async: true, callback: highlightCode },
     { src: '//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js', async: true, callback: highlightCode },
-    { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-    // { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
   ]
 });

@@ -9,7 +9,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="css/reveal.min.css">
     <link rel="stylesheet" href="css/theme/default.css" id="theme">
     <link rel="stylesheet" href="lib/css/hybrid.css">
@@ -27,7 +27,6 @@
 <section>
   <h2>About me</h2>
   <ul>
-    <li>21 years old, born in Tucson</li>
     <li>Student at PCC and UA</li>
     <li>Developer at <a href="http://yourlabs.com">YourLabs</a>
       <ul>
@@ -176,7 +175,11 @@ React.render(
 <section>
   <h2>Rendering (second time)</h2>
   <ul>
-    <li>Component's props change (external)</li>
+    <li>Component's props change (external)
+      <ul>
+        <li>JSX: <script class="javascript inline" type="text/code"><List items={["Alice", "Carol", "Bob"]}/></script></li>
+      </ul>
+    </li>
     <li>Component renders <em>fresh</em> virtual DOM tree</li>
     <li>Virtual DOM is diff'ed with old version</li>
     <li>Diff is applied by adding/removing elements and changing attributes ("reconciliation")</li>
@@ -315,6 +318,7 @@ render: function () {
     <li><code class="bad">✗</code> Different model from rest of web dev</li>
   </ul>
 </section>
+
 <section>
   <h2>Tradeoffs (JSX)</h2>
   <ul>
@@ -333,12 +337,24 @@ render: function () {
 </section>
 
 <section>
+  <h2>Bonus: React Native</h2>
+  <ul>
+    <li>Announced at React.js Conf</li>
+    <li>React-powered iOS apps (more platforms soon)</li>
+    <li>100% native UI (not web view)</li>
+    <li>Reconciliation <code>==</code> minimal updates</li>
+    <li><code class="bad">✗</code> <span class="strike">Write once, run anywhere</span></li>
+    <li><code class="good">✓</code> Learn once, write anywhere</li>
+  </ul>
+</section>
+
+<section>
   <h2>Who's using it</h2>
   <ul>
     <li>Facebook (comments, messages)</li>
     <li>Instagram (whole site)</li>
-    <li>Yahoo (mail app)</li>
     <li>GitHub (Atom editor)</li>
+    <li>Yahoo (mail app)</li>
     <li>reddit (marketplace)</li>
     <li>Khan Academy (everything)</li>
   </ul>
@@ -350,6 +366,7 @@ render: function () {
   <ul>
     <li><a href="http://facebook.github.io/react/">React</a> (docs)</li>
     <li><a href="http://facebook.github.io/flux/">Flux</a> (architecture)</li>
+    <li><a href="http://conf.reactjs.com/schedule.html">React.js Conf</a> (talks)</li>
     <li><a href="http://todomvc.com/examples/react/">TodoMVC</a> (example app)</li>
   </ul>
   <h4>Extend it</h4>
@@ -370,7 +387,7 @@ render: function () {
   <h2>Wrapping it up</h2>
   <ul>
     <li>Resources are out there, give it a try!</li>
-    <li>Available for personal help or consulting</li>
+    <li>Available for consulting or personal mentoring</li>
     <li>Email: <a href="mailto:jordandanford@gmail.com">jordandanford@gmail.com</a></li>
     <li>GitHub: <a href="https://github.com/jdanford">github.com/jdanford</a></li>
     <li>Slides: <a href="http://jdanford.github.io/react/">jdanford.github.io/react</a></li>

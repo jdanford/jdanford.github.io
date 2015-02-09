@@ -139,6 +139,8 @@ body {
 
 .reveal .slides {
   text-align: left; }
+.reveal .strike {
+  text-decoration: line-through; }
 .reveal h2 {
   margin-bottom: 15px; }
 .reveal .title-slide {
@@ -150,9 +152,12 @@ body {
   background: rgba(255, 255, 255, 0.5);
   border: none; }
 .reveal .good {
+  display: inline-block;
   color: #0d0; }
 .reveal .bad {
-  color: #d00; }
+  display: inline-block;
+  color: #d00;
+  padding-right: 5px; }
 .reveal .neutral {
   color: #aaa; }
 .reveal .parent {
